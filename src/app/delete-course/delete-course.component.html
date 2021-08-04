@@ -1,0 +1,16 @@
+<div class="form-container">
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="id">Id</label>
+                <input type="number" class="form-control" id="id" required [(ngModel)]="course.id" name="id" />
+            </div>
+            <button (click)="delCourse()">Delete</button>
+        </div>
+        <div *ngIf="submitted">
+            <h4>deleted succesfully</h4>
+        </div>
+
+    </div>
+
+</div>

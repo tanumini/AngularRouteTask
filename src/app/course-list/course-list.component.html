@@ -1,0 +1,23 @@
+<h2>Course List</h2>
+<ul *ngFor="let course of courses">
+  <!--<li>{{course.id}}
+        <br>{{course.title}}
+        <button (click)="removeCourse(course.id)">delete</button>
+    </li>-->  
+  
+    <table style="width:100%">
+        
+        <tr>
+            <th  colspan="10">Course-id</th>
+            <td>{{course.id}}</td>
+            <th  colspan="2"> Course-title</th>
+            <td>{{course.title}}</td>
+          </tr>
+        <!--<tr>
+            <td>{{course.id}}</td>
+            <td>{{course.title}}</td>
+          </tr>-->
+        
+        
+      </table>
+</ul>

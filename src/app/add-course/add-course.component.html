@@ -1,0 +1,19 @@
+<h2>Add new course</h2>
+<div class="form-container">
+    <div class="submit-form">
+        <div *ngIf="!submitted">
+            <div class="form-group">
+                <label for="title">Course Title</label>
+                <input type="text" class="form-control" id="title" required [(ngModel)]="course.title" name="title" />
+            </div>
+            <br>
+            <button (click)="saveCourse()">save</button>
+        </div>
+        <div *ngIf="submitted">
+<h4>Submitted succesfully</h4>
+<button (click)="newCourse()">Add more courses</button>
+        </div>
+
+    </div>
+
+</div>
